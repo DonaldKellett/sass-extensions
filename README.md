@@ -8,6 +8,14 @@ Adds core functionality that Sass painfully lacks.  Public Domain
 - Status: In Development but always ready for production
 - License: **Public Domain** (feel free to do whatever with it :smile:)
 
+## Initialization
+
+Simply include the following line of code in your main Sass file(s) to get started:
+
+```scss
+@include "path/to/your/extensions";
+```
+
 ## Contributing
 
 [![Join the chat at https://gitter.im/DonaldKellett/sass-extensions](https://badges.gitter.im/DonaldKellett/sass-extensions.svg)](https://gitter.im/DonaldKellett/sass-extensions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
