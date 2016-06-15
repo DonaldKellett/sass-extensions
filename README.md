@@ -39,6 +39,10 @@ Regarding the Gitter channel, apart from contributions, questions are also alway
 
 To view the entire list of functions that are natively available in Sass, please refer to [this link](http://sass-lang.com/documentation/Sass/Script/Functions.html).
 
+### Compass Helper Functions (Reference Link)
+
+Additionally, [Compass](http://compass-style.org), which is quite frequently used as a Sass extension, also comes with a bunch of [handy helper functions](http://compass-style.org/reference/compass/helpers/) so I won't be implementing them here.
+
 ### RGB Functions
 
 There are currently no RGB functions in this repo.
@@ -61,7 +65,44 @@ There are currently no string functions in this repo.
 
 ### Number Functions
 
-There are currently no number functions in this repo.
+#### round-to
+
+```scss
+round-to($number, $precision);
+```
+
+Rounds a given number to a specified number of decimal places.  Behaves properly for:
+
+- Any `$number` that is a valid number *with no units*
+- Any integer value of `$precision` (can be positive or negative)
+
+Both arguments are required as otherwise, `round` alone can save you some typing :wink:
+
+#### trunc
+
+```scss
+trunc($number);
+```
+
+Truncates a given number (i.e. removes all decimal places, showing only the integer part).  Works for all numbers *with no units*.
+
+#### exp
+
+```scss
+exp($x);
+```
+
+Calculates e^x for all values of `$x`.  Works for all valid numbers *with no units*.
+
+#### rand-int
+
+```scss
+rand-int([$min, $max]);
+```
+
+Returns a random integer in the range specified.  Works properly only when both `$min` and `$max` are integers **and** `$min < $max`.
+
+`$min` and `$max` are optional; if not specified `$min` defaults to `0` and `$max` defaults to `100`.
 
 ### List Functions
 
