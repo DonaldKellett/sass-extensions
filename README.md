@@ -61,7 +61,13 @@ There are currently no color functions in this repo.
 
 ### String Functions
 
-There are currently no string functions in this repo.
+#### str-to-char-list
+
+```scss
+str-to-char-list($string);
+```
+
+Converts a string into a list of characters, separated by comma delimiters.  Works for all strings of all lengths; however, *please note that if the string is empty then an empty string is returned* because an empty list is not considered a valid CSS value.
 
 ### Number Functions
 

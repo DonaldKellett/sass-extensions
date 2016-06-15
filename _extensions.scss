@@ -10,3 +10,11 @@
 @function rand-int($min: 0, $max: 100) {
   @return $min + floor(random() * ($max - $min + 1));
 }
+@function str-to-char-list($s) {
+  @if str-length($s) == 0 {@return "";}
+  $list: ();
+  @for $i from 1 through str-length($s) {
+    $list: append($list, str-slice($s, $i, $i), comma);
+  }
+  @return $list;
+}
