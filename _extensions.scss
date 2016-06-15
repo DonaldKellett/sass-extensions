@@ -27,3 +27,13 @@
   }
   @return $result;
 }
+@function list-join($list, $separator) {
+  @if length($list) == 0 {@return "";}
+  @if length($list) == 1 {@return nth($list, 1);}
+  $result: nth($list, 1);
+  @for $i from 2 through length($list) {
+    $result: $result + $separator;
+    $result: $result + nth($list, $i);
+  }
+  @return $result;
+}

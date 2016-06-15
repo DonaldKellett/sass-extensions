@@ -120,7 +120,13 @@ Returns a random integer in the range specified.  Works properly only when both 
 
 ### List Functions
 
-There are currently no list functions in this repo.
+#### list-join
+
+```scss
+list-join($list, $separator);
+```
+
+Joins all the elements in a list into a string with the provided `$separator` in between.  Similar to the built-in `implode` function in PHP except the arguments are in the opposite order (in `list-join`, `$list` goes first before the `$separator`).  `$list` may be any valid list and `$separator` any valid string.
 
 ### Map Functions
 
