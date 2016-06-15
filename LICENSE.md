@@ -1,0 +1,3 @@
+I, **Donald Sebastian Leung**, hereby declare that the contents in this repository (**sass-extensions**) to be Public Domain, which means that any user may copy, modify, distribute, license or sell (etc.) the contents of this repository **without providing any attribution whatsoever and without keeping a copy of this "License"** on the following terms:
+
+ - If any form of loss on your behalf was caused, directly or indirectly, by the code in this repository, you **agree to indemnify me** by all means (i.e. you must NOT sue me for any losses on your behalf should you use the code presented in this repo) and you understand that no refund (or similar) will be paid.
