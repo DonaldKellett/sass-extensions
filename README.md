@@ -69,6 +69,14 @@ str-to-char-list($string);
 
 Converts a string into a list of characters, separated by comma delimiters.  Works for all strings of all lengths; however, *please note that if the string is empty then an empty string is returned* because an empty list is not considered a valid CSS value.
 
+#### repeat-str
+
+```scss
+repeat-str($string, $count);
+```
+
+Repeats a string over `$count` times and returns a new **string** (not a list!).  Similar to repeating strings in Ruby by the multiplication operator (`*`) but please note that *the order of the arguments matter - the string must be passed in first and the repeat count second*.  `$string` can be any valid string and `$count` any valid natural number (i.e. positive integer).
+
 ### Number Functions
 
 #### round-to

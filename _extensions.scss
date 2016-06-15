@@ -18,3 +18,12 @@
   }
   @return $list;
 }
+@function repeat-str($s, $t) {
+  @if ($t == 0) {@return "";}
+  @if ($t == 1) {@return $s;}
+  $result: "";
+  @for $i from 1 through $t {
+    $result: $result + $s;
+  }
+  @return $result;
+}
