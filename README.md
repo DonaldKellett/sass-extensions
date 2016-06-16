@@ -33,6 +33,14 @@ If:
 
 Regarding the Gitter channel, apart from contributions, questions are also always welcome.  Please note that severely off-topic, offensive or profane comments will be deleted (and the user(s) reported) but semi-off-topic comments (e.g. comments regarding Sass as a whole or other programming concepts not strictly related to Sass) are also welcome :smile:
 
+### Help Needed!
+
+[Donald Sebastian Leung](https://github.com/DonaldKellett) would like your help in implementing the following core functions:
+
+#### Lexicographical Sort
+
+Since [Donald Sebastian Leung](https://github.com/DonaldKellett) is unable to implement a lexicographical (alphabetical) sort (he does not know how to implement the correct algorithm for a lexicographical sort), he would like your help in implementing this core functionality.  If you have successfully implemented an algorithm for this function and **have tested it thoroughly against a set of test cases**, feel free to start a pull request.  I will then test the algorithm myself and if the algorithm works properly for a wide range of cases then I will merge the pull request and **your contribution will be officially recognised by GitHub** :smile:.
+
 ## Documentation
 
 ### Built-in Sass Functions (Reference Link)
