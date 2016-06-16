@@ -144,6 +144,16 @@ list-reduce($list, $fn[, $init]);
 
 Expects two arguments, a `$list` to iterate through and a `$fn` to be called.  The third argument `$init` (the initial value before reducing) is optional but best practice is to provide it.  `list-reduce` iterates through the list, reducing values and returning a value, list or map, depending on the function passed into `list-reduce`.  Behaves very similarly to `Array.prototype.reduce` in Javascript and `array_reduce` in PHP except **no** third argument (the current index) is passed into your function.
 
+#### bubblesort
+
+```scss
+bubblesort($list);
+```
+
+Expects a **numerical list** `$list` as its only argument and returns a new list without altering the original list using the **Bubblesort Algorithm**.  Please note that all items in the list must be **valid numbers** *with no units*.
+
+*N.B. The bubblesort function may work with numbers with units (e.g. `px`, `em`) provided that the units are consistent; however, this has NOT been tested yet so please do not expect it to work properly in such cases.*
+
 ### Map Functions
 
 There are currently no map functions in this repo.

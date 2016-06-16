@@ -61,3 +61,17 @@
     @return $result;
   }
 }
+@function bubblesort($list) {
+  @if length($list) == 1 {@return $list;}
+  $copy: $list;
+  @for $i from 1 through length($copy) - 1 {
+    @for $j from 1 through length($copy) - 1 {
+      @if nth($copy, $j) > nth($copy, $j + 1) {
+        $temp: nth($copy, $j);
+        $copy: set-nth($copy, $j, nth($copy, $j + 1));
+        $copy: set-nth($copy, $j + 1, $temp);
+      }
+    }
+  }
+  @return $copy;
+}
