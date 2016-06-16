@@ -44,3 +44,20 @@
   }
   @return $result;
 }
+@function list-reduce($list, $fn, $init: null) {
+  @if $init == null {
+    @if length($list) == 0 {@return null;}
+    @if length($list) == 1 {@return nth($list, 1);}
+    $result: nth($list, 1);
+    @for $i from 2 through length($list) {
+      $result: call($fn, $result, nth($list, $i));
+    }
+    @return $result;
+  } @else {
+    $result: $init;
+    @each $item in $list {
+      $result: call($fn, $result, $item);
+    }
+    @return $result;
+  }
+}

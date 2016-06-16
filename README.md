@@ -136,6 +136,14 @@ list-map($list, $fn);
 
 Expects a list `$list` to be mapped as its first argument and a function `$fn` as its second argument which is used to map the list.  Returns a new list with its elements mapped according to the function provided.  Similar to `Array.prototype.map` in Javascript, `Array#map` in Ruby and `array_map` in PHP.
 
+#### list-reduce
+
+```scss
+list-reduce($list, $fn[, $init]);
+```
+
+Expects two arguments, a `$list` to iterate through and a `$fn` to be called.  The third argument `$init` (the initial value before reducing) is optional but best practice is to provide it.  `list-reduce` iterates through the list, reducing values and returning a value, list or map, depending on the function passed into `list-reduce`.  Behaves very similarly to `Array.prototype.reduce` in Javascript and `array_reduce` in PHP except **no** third argument (the current index) is passed into your function.
+
 ### Map Functions
 
 There are currently no map functions in this repo.
