@@ -128,6 +128,14 @@ list-join($list, $separator);
 
 Joins all the elements in a list into a string with the provided `$separator` in between.  Similar to the built-in `implode` function in PHP except the arguments are in the opposite order (in `list-join`, `$list` goes first before the `$separator`).  `$list` may be any valid list and `$separator` any valid string.
 
+#### list-map
+
+```scss
+list-map($list, $fn);
+```
+
+Expects a list `$list` to be mapped as its first argument and a function `$fn` as its second argument which is used to map the list.  Returns a new list with its elements mapped according to the function provided.  Similar to `Array.prototype.map` in Javascript, `Array#map` in Ruby and `array_map` in PHP.
+
 ### Map Functions
 
 There are currently no map functions in this repo.
