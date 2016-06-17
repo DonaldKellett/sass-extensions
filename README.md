@@ -162,6 +162,14 @@ Expects a **numerical list** `$list` as its only argument and returns a new list
 
 *N.B. The bubblesort function may work with numbers with units (e.g. `px`, `em`) provided that the units are consistent; however, this has NOT been tested yet so please do not expect it to work properly in such cases.*
 
+#### list-reverse
+
+```scss
+list-reverse($list);
+```
+
+Accepts a list and returns a new list with the order of the elements reversed.
+
 ### Map Functions
 
 There are currently no map functions in this repo.
